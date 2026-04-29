@@ -1,9 +1,9 @@
 # ¿Cuándo dejó de ser normal el calor?
 ### El año en que México y el mundo cruzaron el punto de inflexión climático
 
-**Autor:** Martín [Apellido Paterno]  
-**Matrícula:** [Matrícula IBERO]  
-**Curso:** Visualización Gráfica para IA — IBERO León, 2025  
+**Autor:** Felix Garcia
+**Matrícula:** 194223-7  
+**Curso:** Visualización Gráfica para IA
 **Docente:** Dra. Dora Alvarado  
 **Herramienta:** Marimo · **Tema:** Temperatura histórica global y en México  
 
@@ -56,8 +56,8 @@ proyecto-final/
 ├── app.py                    # Aplicación Marimo principal (data story completa)
 ├── preprocessing.py          # Script standalone de extracción y limpieza
 ├── requirements.txt
-├── README.md
-└── data/
+├── README.md           
+└── data/                     #Estas carpetas las crea presprocessing.py
     ├── raw/                  # CSVs originales descargados (generados por preprocessing.py)
     │   ├── global.csv
     │   └── zonal.csv
@@ -79,8 +79,8 @@ proyecto-final/
 
 ```bash
 # 1. Clonar el repositorio
-git clone https://github.com/[usuario]/[repo-name].git
-cd [repo-name]
+git clone https://github.com/nxtfifi/temperatura-historica-mexico.git
+
 
 # 2. Crear entorno virtual (recomendado)
 python -m venv venv
@@ -114,9 +114,9 @@ La aplicación abre automáticamente en `http://localhost:2718`.
 
 ## Aplicación desplegada
 
-🔗 **[Enlace al sitio en línea — completar antes de la presentación]**
+🔗 **[Ver app en línea](https://molab.marimo.io/notebooks/nb_Go5dw9rHs9A2eS7VzA9seQ/app)**
 
-> Plataforma de despliegue: Marimo Cloud (`marimo.io`) o Hugging Face Spaces
+> Plataforma de despliegue: Marimo Cloud (molab.marimo.io)
 
 ---
 
@@ -127,20 +127,3 @@ La aplicación abre automáticamente en `http://localhost:2718`.
 | Anomalía global | Barras divergentes | El canal visual de posición codifica dirección (positivo/negativo) y magnitud simultáneamente; el color refuerza warm/cold semánticamente |
 | Comparación zonal | Líneas múltiples | Permite comparar trayectorias temporales y pendientes entre series; la media móvil 10a elimina ruido sin perder forma |
 | Mapa de calor mensual | Heatmap | Codifica dos variables categóricas (mes/año) y una continua (anomalía) en una sola vista; revela patrones estacionales invisibles en series anuales |
-
----
-
-## Aprendizajes y dificultades con Marimo
-
-**Aprendizajes:**
-- El modelo reactivo de Marimo (similar a una hoja de cálculo) facilita mantener la UI sincronizada con los datos sin callbacks manuales.
-- `mo.ui.multiselect` y `mo.ui.dropdown` se integran naturalmente con Plotly al separar la definición del widget (una celda) de su consumo (celda siguiente).
-- `hide_code=True` permite construir una presentación limpia donde el lector ve solo la narrativa y las gráficas.
-
-**Dificultades:**
-- El modelo de dependencias requiere variables únicas por celda; nombrar cuidadosamente evita conflictos entre `fig1`, `fig2`, `fig3`.
-- Marimo renderiza el valor de `return` de cada celda: distinguir entre lo que se comparte y lo que se muestra requiere atención.
-
----
-
-*Todos los datos son de dominio público y provienen de la NASA. La aplicación no modifica los datos originales; solo aplica transformaciones de limpieza y cálculo de estadísticas derivadas documentadas en `preprocessing.py`.*
