@@ -53,7 +53,7 @@ def _(mo):
     <div style="background:linear-gradient(160deg,#0d1117 0%,#161b22 60%,#1a2332 100%);
             padding:60px 52px;border-radius:14px;border:1px solid #30363d;margin-bottom:8px;">
       <p style="color:#7d8590;font-size:0.8em;letter-spacing:3px;text-transform:uppercase;margin:0 0 18px 0;">
-    Visualización Gráfica para IA · IBERO León · 2025
+    Visualización Gráfica para IA · IBERO León · 2026
       </p>
       <h1 style="color:#e6edf3;font-size:2.9em;font-family:Georgia,serif;margin:0 0 14px 0;line-height:1.2;">
     ¿Cuándo dejó de ser<br>normal el calor?
@@ -335,9 +335,9 @@ def _(mo):
     <p style="color:#1a1a2e;font-size:0.85em;line-height:2;margin:0;">
     <strong>📂 Fuentes de datos</strong><br>
     · NASA GISS Surface Temperature Analysis (GISTEMP v4) — Global Annual Mean<br>
-    &nbsp;&nbsp;https://data.giss.nasa.gov/gistemp/tabledata_v4/GLB.Ts+dSST.csv — descargado 2025-04-28<br>
+    &nbsp;&nbsp;https://data.giss.nasa.gov/gistemp/tabledata_v4/GLB.Ts+dSST.csv — descargado 2026-04-23<br>
     · NASA GISTEMP v4 — Zonal Annual Means<br>
-    &nbsp;&nbsp;https://data.giss.nasa.gov/gistemp/tabledata_v4/ZonAnn.Ts+dSST.csv — descargado 2025-04-28<br>
+    &nbsp;&nbsp;https://data.giss.nasa.gov/gistemp/tabledata_v4/ZonAnn.Ts+dSST.csv — descargado 2026-04-23<br>
     · Licencia: dominio público (gobierno de EE.UU.) · Anomalías en °C respecto a media 1951–1980
     </p>
     </div>
