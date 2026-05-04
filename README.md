@@ -28,15 +28,11 @@ geográficas que cubren México.
 2. ¿Se está calentando México más rápido que el promedio mundial?
 3. ¿En qué mes y año el rojo tomó control permanente del calendario climático?
 
-### Visualizaciones
+## Aplicación desplegada
 
-| # | Título | Tipo | Interactividad |
-|---|--------|------|----------------|
-| 1 | La línea que no para | Gráfica de barras divergentes + línea de tendencia | Selector de suavizado (Marimo reactivo), zoom/pan, rangeslider |
-| 2 | México bajo la lupa | Gráfica de líneas múltiples por zona | Multiselect reactivo de series (Marimo), hover unificado |
-| 3 | El calendario del calentamiento | Mapa de calor mensual (1880–2024) | Hover con valor exacto, zoom, herramientas Plotly |
+🔗 **[Ver app en línea](https://molab.marimo.io/notebooks/nb_Go5dw9rHs9A2eS7VzA9seQ/app)**
 
----
+> Plataforma de despliegue: Marimo Cloud (molab.marimo.io)
 
 ## Fuentes de datos
 
@@ -106,24 +102,14 @@ marimo edit app.py
 
 La aplicación abre automáticamente en `http://localhost:2718`.
 
-### Notas
-- Si `preprocessing.py` se ejecutó previamente, la app carga desde `data/processed/` sin conexión a internet.
-- Si no se ejecutó, la app descarga los datos de NASA GISTEMP al iniciar (requiere internet, ~5 segundos).
-
----
-
-## Aplicación desplegada
-
-🔗 **[Ver app en línea](https://molab.marimo.io/notebooks/nb_Go5dw9rHs9A2eS7VzA9seQ/app)**
-
-> Plataforma de despliegue: Marimo Cloud (molab.marimo.io)
-
----
-
 ## Decisiones de diseño
 
-| Visualización | Tipo elegido | Justificación |
-|---------------|-------------|---------------|
-| Anomalía global | Barras divergentes | El canal visual de posición codifica dirección (positivo/negativo) y magnitud simultáneamente; el color refuerza warm/cold semánticamente |
-| Comparación zonal | Líneas múltiples | Permite comparar trayectorias temporales y pendientes entre series; la media móvil 10a elimina ruido sin perder forma |
-| Mapa de calor mensual | Heatmap | Codifica dos variables categóricas (mes/año) y una continua (anomalía) en una sola vista; revela patrones estacionales invisibles en series anuales |
+### Visualizaciones
+
+| # | Título | Tipo | Interactividad |
+|---|--------|------|----------------|
+| 1 | La línea que no para | Gráfica de barras divergentes + línea de tendencia | Selector de suavizado (Marimo reactivo), zoom/pan, rangeslider |
+| 2 | México bajo la lupa | Gráfica de líneas múltiples por zona | Multiselect reactivo de series (Marimo), hover unificado |
+| 3 | El calendario del calentamiento | Mapa de calor mensual (1880–2024) | Hover con valor exacto, zoom, herramientas Plotly |
+
+---
